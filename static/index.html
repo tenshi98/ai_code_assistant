@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generador y depurador de código asistido por IA local (CodeLlama).">
+    <title>AI Code Generator & Debugger</title>
+    <!-- Hoja de estilos extraída del bloque <style> original. -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Encabezado principal de la aplicación. -->
+    <h1>AI Code Generator & Debugger</h1>
+
+    <!-- Controles de entrada del usuario. -->
+    <textarea id="code-input" placeholder="Introduce una descripción (p. ej., «función de Python para Fibonacci») o pega tu código para depurarlo...."></textarea><br>
+    <select id="mode">
+        <option value="generate">Generar código</option>
+        <option value="debug">Depurar código</option>
+    </select>
+    <button id="submit-button">Enviar</button>
+
+    <h2>Output:</h2>
+    <pre id="output">Tu código generado o depurado aparecerá aquí...</pre>
+
+    <!-- Lógica del navegador (se carga después de parsear el HTML). -->
+    <script src="/static/script.js" defer></script>
+
+</body>
+</html>
